@@ -24,10 +24,15 @@
 }
 
 .header {
-    height: 3rem;
+    height: 70px;
     background-color: white;
     width: 100%;
     border-bottom: 1px solid #EAEAEA;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .logo {
@@ -51,7 +56,59 @@
 
 
 .sidebar li {
-    padding-top: 30px;
     text-align: left;
-    width: 50%;
+    /* color: gray; */
+    font-size: 16px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.item_container {
+    display: flex;
+    width: 70%;
+    text-align: left;
+    text-decoration: none;
+    color: #232323;
+    margin: auto;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.item_container i {
+    margin-right: 6px;
+}
+
+
+
+.active {
+    background-color: #F5F6FA;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    width: 100%;
+    color: #F8991D;
+    border-left: 5px solid #F8991D;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.search_bar {
+    height: 2.4em;
+    width: 30%;
+    background-color: #F5F6FA;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 4px;
+}
+
+.search_bar input {
+    width: 90%;
+    height: 2.4em;
+    border: none;
+    background-color: transparent;
+}
+
+.search_bar input:focus {
+    outline: none;
 }
