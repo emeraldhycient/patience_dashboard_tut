@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 #container {
@@ -21,6 +22,7 @@
 .grid2 {
     width: 80vw;
     height: 100vh;
+    overflow-y: auto;
 }
 
 .header {
@@ -111,4 +113,154 @@
 
 .search_bar input:focus {
     outline: none;
+}
+
+
+
+
+
+.datalog {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.card {
+    padding: 10px;
+}
+
+.card h6 {
+    color: #323232;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.card h3 {
+    color: #323232;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.wallet {
+    margin-top: 10px;
+    margin-left: 8px;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 47%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+
+.program {
+    display: flex;
+    align-items: center;
+    width: vw;
+    height: 297px;
+    padding: 10px;
+    margin-top: 30px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+
+.detail {
+    justify-content: center;
+    font-size: normal;
+    padding: 15px;
+}
+
+#detail_title {
+    margin-bottom: 10px;
+}
+
+#semi_container {
+    padding: 25px;
+}
+
+#header1 {
+    display: flex;
+}
+
+#header2 {
+    display: none;
+}
+
+/* response web design (rwd) */
+
+
+/* (max-width : ) , styles in side of this will apply from the specified screen size down wards */
+@media (max-width:800px) {
+
+
+    .grid1 {
+        width: 20vw;
+        background-color: white;
+        height: 100vh;
+        border-right: 1px solid #EAEAEA;
+        display: none;
+    }
+
+    .grid2 {
+        width: 100vw;
+        height: 100vh;
+        overflow-y: auto;
+    }
+
+    .datalog {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .wallet {
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        width: 95%;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        padding: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #semi_container {
+        padding: 10px;
+    }
+
+    .program {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+        height: fit-content;
+        padding: 10px;
+        margin-top: 30px;
+        margin: 10px;
+        background-color: white;
+        border-radius: 7px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .program img {
+        width: 100%;
+    }
+
+    #header1 {
+        display: none;
+    }
+
+    #header2 {
+        display: flex;
+        align-items: center;
+    }
+
 }
